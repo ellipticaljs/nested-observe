@@ -11,6 +11,8 @@
 
 `nested-observe` internally uses `WeakMap` (for garbage collection). Node.js supports both `WeakMap` and `Object.observe` since version `0.11.13`. For browsers have a look at: [kangax's compaitibility table](http://kangax.github.io/compat-table/es7/#Object.observe). For unsupported browsers/Node.js, you can use shims, e.g. [KapIT/observe-shim](https://github.com/KapIT/observe-shim) and [Benvie/WeakMap](https://github.com/Benvie/WeakMap).
 
+This forked version is a UMD build that allows the library to be used in the browser without the requirement of a commonjs module facade.
+
 ## Api
 
 ```js
