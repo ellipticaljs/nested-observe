@@ -6,11 +6,10 @@ var gulp = require('gulp'),
     fs = require('fs-extra'),
     concat=require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    merge = require('merge-stream'),
-    build=require('./build.json'),
-    release=require('./build/dist.json'),
-    src='./src',
-    dist='./dist';
+    BUILD_JSON=require('./build/dist.json'),
+    BUILD_NAME='nested-observe.js',
+    MIN_NAME='nested-observe.min.js',
+    DIST='./dist';
 
 
 gulp.task('default', ['lint', 'test']);
@@ -52,40 +51,23 @@ gulp.task('coveralls', ['coverage'], function() {
 });
 
 
-
-
 gulp.task('build',function(){
-
-    var build_=libStream()
-        .pipe(concat('nested-observe.js'))
-        .pipe(gulp.dest(src));
-
-    var release_=releaseStream()
-        .pipe(concat('nested-observe.js'))
-        .pipe(gulp.dest(dist));
-
-    return merge(build_, release_);
-
+    concatStream(BUILD_NAME)
+        .pipe(gulp.dest(DIST));
 });
 
 gulp.task('minify',function(){
-
-    var build_=libStream()
-        .pipe(concat('nested-observe.js'))
-        .pipe(gulp.dest(src));
-
-    var minify_=releaseStream()
-        .pipe(concat('nested-observe.min.js'))
+    concatStream(MIN_NAME)
         .pipe(uglify())
-        .pipe(gulp.dest(dist));
-
-    return merge(build_, minify_);
+        .pipe(gulp.dest(DIST));
 });
 
-function libStream(){
-    return gulp.src(build);
+
+function srcStream(){
+    return gulp.src(BUILD_JSON);
 }
 
-function releaseStream(){
-    return gulp.src(release);
+function concatStream(name){
+    return srcStream()
+        .pipe(concat(name))
 }

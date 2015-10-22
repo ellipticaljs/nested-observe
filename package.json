@@ -4,7 +4,6 @@
   "author": "Markus Ast <npm.m@rkusa.st>",
   "description": "Object.observe() for nested objects.",
   "keywords": ["observe", "es6", "harmony"],
-  "main": "lib/",
   "contributors":[
      {
        "name": "S. Francis",

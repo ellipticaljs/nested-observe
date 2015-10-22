@@ -1,3 +1,4 @@
 [
-    "./src/nested-observe.js"
+    "./node_modules/json-pointer/dist/json-pointer.js",
+    "./lib/nested-observe.js"
 ]
