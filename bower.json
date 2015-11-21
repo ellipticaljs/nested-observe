@@ -1,7 +1,7 @@
 {
   "name": "Nested.observe",
   "description": "Object.observe() for nested objects.",
-  "version":"0.1.5",
+  "version": "0.1.5",
   "main": "./dist/nested-observe.js",
   "authors": [
     "Markus Ast, S. Francis"
@@ -20,5 +20,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "Object-observe": "~0.0.4"
+  }
 }
