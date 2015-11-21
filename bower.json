@@ -1,0 +1,24 @@
+{
+  "name": "Nested.observe",
+  "description": "Object.observe() for nested objects.",
+  "version":"0.1.5",
+  "main": "./dist/nested-observe.js",
+  "authors": [
+    "Markus Ast, S. Francis"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "observe",
+    "es6",
+    "harmony"
+  ],
+  "homepage": "https://github.com/tachyon1337/nested-observe",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

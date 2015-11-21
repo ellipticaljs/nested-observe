@@ -299,7 +299,7 @@
                 changes = Array.prototype.concat.apply([], changes); // flatten
                 self.callback(changes)
             } catch (err) {
-                if (Nested.debug) console.error(err.stack)
+                console.log(err);
             }
         }
     };
@@ -361,7 +361,6 @@
 
 // Recursively unobserve an object and its nested objects.
     Observer.prototype.unobserve = function(obj, path) {
-        console.log(path);
         if (!obj)  obj = this.root;
         if (!path) path = '';
 
@@ -463,7 +462,6 @@
         if (!delegate.observers.has(obj)) {
             return
         }
-        console.log('nested unobserve');
         var observers = delegate.observers.get(obj);
         observers.forEach(function(observer) {
             observer.unobserve()
