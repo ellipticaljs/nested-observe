@@ -4,4 +4,4 @@ node_modules/
 /test.js
 /test/coverage
 
-bower-components/
+bower_components/

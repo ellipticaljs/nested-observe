@@ -1,7 +1,7 @@
 {
   "name": "Nested.observe",
   "description": "Object.observe() for nested objects.",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "./dist/nested-observe.js",
   "authors": [
     "Markus Ast, S. Francis"
