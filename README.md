@@ -1,5 +1,9 @@
 # nested-observe
 
+# NOTICE
+
+This repo is now deprecated. The project has moved to https://github.com/ellipticaljs/nested-observe
+
 `Object.observe()` for nested objects.
 
 [![NPM][npm]](https://npmjs.org/package/nested-observe)
