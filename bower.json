@@ -12,7 +12,7 @@
     "es6",
     "harmony"
   ],
-  "homepage": "https://github.com/tachyon1337/nested-observe",
+  "homepage": "https://github.com/ellipticaljs/nested-observe",
   "moduleType": [],
   "ignore": [
     "**/.*",

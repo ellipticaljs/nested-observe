@@ -1,6 +1,6 @@
 {
   "name": "nested-observe",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": "Markus Ast <npm.m@rkusa.st>",
   "description": "Object.observe() for nested objects.",
   "keywords": ["observe", "es6", "harmony"],
@@ -11,8 +11,8 @@
      }
     ],
   "dependencies": {
-    "Object.observe":"git+https://github.com/tachyon1337/Object.observe.git",
-    "json-pointer": "git+https://github.com/tachyon1337/json-pointer.git"
+    "Object.observe":"git+https://github.com/ellipticaljs/Object.observe.git",
+    "json-pointer": "git+https://github.com/ellipticaljs/json-pointer.git"
   },
   "devDependencies": {
     "chai": "^1.9.1",
@@ -34,12 +34,12 @@
     "coveralls": "gulp coveralls"
   },
   "bugs": {
-    "url": "https://github.com/rkusa/nested-observe/issues"
+    "url": "https://github.com/ellipticaljs/nested-observe/issues"
   },
-  "homepage": "https://github.com/rkusa/nested-observe",
+  "homepage": "https://github.com/ellipticaljs/nested-observe",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tachyon1337/nested-observe.git"
+    "url": "https://github.com/ellipticaljs/nested-observe.git"
   },
   "license": "MIT",
   "engines": {
